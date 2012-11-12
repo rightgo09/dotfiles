@@ -15,6 +15,7 @@
   ls = ls-files
   fe = fetch
   gr = grep
+  chp = cherry-pick
 
 [color]
   ui = auto
