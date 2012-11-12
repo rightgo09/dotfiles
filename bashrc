@@ -14,6 +14,7 @@ alias l='ls -F'
 alias bi='bundle install --path vendor/bundler'
 alias be='bundle exec'
 alias ber='bundle exec rspec'
+alias bec='bundle exec cucumber -v'
 
 # display
 export PS1='\[\033[1;36m\]\h[\u: \w]\n\$\[\033[1;37m\] '
