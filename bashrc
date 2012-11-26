@@ -16,6 +16,9 @@ alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias bec='bundle exec cucumber -v'
 
+# util
+alias prev='cd $OLDPWD'
+
 # display
 export PS1='\[\033[1;36m\]\h[\u: \w]\n\$\[\033[1;37m\] '
 export CLICOLOR=1
