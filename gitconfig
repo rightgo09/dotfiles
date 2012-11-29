@@ -16,6 +16,7 @@
   fe = fetch
   gr = grep
   chp = cherry-pick
+  ad = add
 
 [color]
   ui = auto
