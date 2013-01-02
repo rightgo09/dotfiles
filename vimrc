@@ -20,6 +20,9 @@ NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
 
+" Ruby
+NeoBundle 'vim-ruby/vim-ruby'
+
 filetype plugin indent on     " required!
 filetype indent on
 
