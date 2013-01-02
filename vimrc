@@ -63,7 +63,6 @@ set shiftwidth=2
 set smartindent
 set cindent
 set directory=/tmp
-set paste
 set hlsearch
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
