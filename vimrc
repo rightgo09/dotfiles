@@ -20,6 +20,10 @@ NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 ""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
 
+" ディレクトリ構造表示 http://alligatorswamp.hatenablog.com/entry/2012/09/09/163538
+" :NERDTree
+NeoBundle 'scrooloose/nerdtree'
+
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'bbommarito/vim-slim'
