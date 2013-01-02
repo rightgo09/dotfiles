@@ -24,3 +24,5 @@
   ui = auto
 [core]
   editor = vim
+[github]
+  user = rightgo09
