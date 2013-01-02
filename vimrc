@@ -43,6 +43,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Send Gist
 NeoBundle 'mattn/webapi-vim'
