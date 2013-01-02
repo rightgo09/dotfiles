@@ -35,6 +35,8 @@ set smartindent
 set cindent
 set directory=/tmp
 set paste
+set hlsearch
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 autocmd BufNewFile,BufRead *.tt set filetype=html
