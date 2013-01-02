@@ -44,6 +44,10 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'tpope/vim-haml'
 
+" Send Gist
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'mattn/gist-vim'
+
 filetype plugin indent on     " required!
 filetype indent on
 
