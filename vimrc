@@ -25,6 +25,11 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 " %対応の拡張
 NeoBundle 'matchit.zip'
+" インデントに色づけ
+NeoBundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_color_change_percent = 30
+let g:indent_guides_guide_size = 1
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
