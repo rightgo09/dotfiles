@@ -23,6 +23,8 @@ NeoBundle 'scrooloose/syntastic'
 " ディレクトリ構造表示 http://alligatorswamp.hatenablog.com/entry/2012/09/09/163538
 " :NERDTree
 NeoBundle 'scrooloose/nerdtree'
+" %対応の拡張
+NeoBundle 'matchit.zip'
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
