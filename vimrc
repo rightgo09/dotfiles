@@ -22,6 +22,8 @@ NeoBundle 'scrooloose/syntastic'
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'bbommarito/vim-slim'
+NeoBundle 'tpope/vim-haml'
 
 filetype plugin indent on     " required!
 filetype indent on
