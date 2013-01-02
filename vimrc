@@ -69,9 +69,16 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 autocmd BufNewFile,BufRead *.psgi set filetype=perl
 autocmd BufNewFile,BufRead *.tt set filetype=html
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
+
 " 行末のスペース、タブをハイライト表示
 augroup HighlightTrailingSpaces
   autocmd!
   autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
   autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
 augroup END
+
+" ステータスライン表示
+set laststatus=2
+" ステータスラインをノーマル、編集モードで色づけ
+au InsertEnter * hi StatusLine ctermfg=Blue ctermbg=DarkMagenta cterm=none
+au InsertLeave * hi StatusLine ctermfg=DarkGray ctermbg=White cterm=none
