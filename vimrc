@@ -34,6 +34,10 @@ let g:indent_guides_guide_size = 1
 NeoBundle 'Align'
 let g:Align_xstrlen = 3     " for japanese string
 let g:DrChipTopLvlMenu = '' " remove 'DrChip' menu
+" 対象テキストオブジェクトを囲む
+" s" でダブルクオートで囲める
+" cst\<div>で<div></div>で囲める
+NeoBundle 'tpope/vim-surround'
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
