@@ -53,7 +53,7 @@ filetype plugin indent on     " required!
 filetype indent on
 
 syntax on
-colorscheme darkblue
+colorscheme default
 set number
 set cursorline
 set expandtab
