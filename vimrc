@@ -56,7 +56,6 @@ syntax on
 colorscheme darkblue
 set number
 set cursorline
-set hlsearch
 set expandtab
 set tabstop=2
 set shiftwidth=2
