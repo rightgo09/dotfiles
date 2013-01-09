@@ -81,3 +81,6 @@ set laststatus=2
 " ステータスラインをノーマル、編集モードで色づけ
 au InsertEnter * hi StatusLine ctermfg=Blue ctermbg=DarkMagenta cterm=none
 au InsertLeave * hi StatusLine ctermfg=DarkGray ctermbg=White cterm=none
+
+" 全角記号を全角で表示する
+set ambiwidth=double
