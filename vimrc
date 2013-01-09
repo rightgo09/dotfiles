@@ -54,6 +54,9 @@ filetype indent on
 
 syntax on
 colorscheme default
+hi Comment ctermfg=9
+hi Comment ctermbg=4
+
 set number
 set cursorline
 set expandtab
