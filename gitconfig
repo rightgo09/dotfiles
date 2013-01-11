@@ -24,5 +24,6 @@
   ui = auto
 [core]
   editor = vim
+  pager = less
 [github]
   user = rightgo09
