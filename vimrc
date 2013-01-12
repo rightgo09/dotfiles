@@ -45,6 +45,9 @@ NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
 
+" Node
+NeoBundle 'digitaltoad/vim-jade.git'
+
 " Send Gist
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
