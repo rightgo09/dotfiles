@@ -39,6 +39,10 @@ let g:DrChipTopLvlMenu = '' " remove 'DrChip' menu
 " cst\<div>で<div></div>で囲める
 NeoBundle 'tpope/vim-surround'
 
+" Perl
+NeoBundle 'petdance/vim-perl'
+NeoBundle 'hotchpotch/perldoc-vim'
+
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'bbommarito/vim-slim'
