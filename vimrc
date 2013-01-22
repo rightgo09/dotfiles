@@ -48,6 +48,7 @@ NeoBundle 'hotchpotch/perldoc-vim'
 
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-rails'
 NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
