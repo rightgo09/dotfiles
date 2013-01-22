@@ -103,3 +103,12 @@ set ambiwidth=double
 map <silent> <F12> :bn!<CR>
 " F11で前のバッファに切り替え
 map <silent> <F11> :bp!<CR>
+
+
+" 保存時に行末の空白文字を消す
+function! RTrim()
+  let s:cursor = getpos(".")
+  %s/\s\+$//e
+  call setpos(".", s:cursor)
+endfunction
+autocmd BufWritePre * call RTrim()
