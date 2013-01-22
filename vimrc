@@ -98,3 +98,8 @@ au InsertLeave * hi StatusLine ctermfg=DarkGray ctermbg=White cterm=none
 
 " 全角記号を全角で表示する
 set ambiwidth=double
+
+" F12で次のバッファに切り替え
+map <silent> <F12> :bn!<CR>
+" F11で前のバッファに切り替え
+map <silent> <F11> :bp!<CR>
