@@ -1,0 +1,4 @@
+# キーバインドをCtrl+zに変更
+escape ^z^z
+# ステータスラインを常に表示
+hardstatus alwayslastline "screen: %w"
