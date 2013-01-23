@@ -112,3 +112,6 @@ function! RTrim()
   call setpos(".", s:cursor)
 endfunction
 autocmd BufWritePre * call RTrim()
+
+" 空行挿入
+nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
