@@ -52,6 +52,8 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-cucumber'
+NeoBundle 'asux/vim-capybara'
 
 " Node
 NeoBundle 'digitaltoad/vim-jade.git'
