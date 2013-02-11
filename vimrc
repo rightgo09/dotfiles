@@ -108,12 +108,12 @@ map <silent> <F11> :bp!<CR>
 
 
 " 保存時に行末の空白文字を消す
-function! RTrim()
-  let s:cursor = getpos(".")
-  %s/\s\+$//e
-  call setpos(".", s:cursor)
-endfunction
-autocmd BufWritePre * call RTrim()
+"function! RTrim()
+"  let s:cursor = getpos(".")
+"  %s/\s\+$//e
+"  call setpos(".", s:cursor)
+"endfunction
+"autocmd BufWritePre * call RTrim()
 
 " 空行挿入
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
