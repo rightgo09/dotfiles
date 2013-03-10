@@ -1,3 +1,5 @@
+# 初期メッセージoff
+startup_message off
 # 起動時にbashで開始
 shell -bash
 # キーバインドをCtrl+zに変更
