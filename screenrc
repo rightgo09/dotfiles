@@ -5,6 +5,8 @@ shell -bash
 # キーバインドをCtrl+zに変更
 escape ^z^z
 # ステータスラインを常に表示
-hardstatus alwayslastline "screen: %w"
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y %m/%d %C%a "
+hardstatus off
+
 # ビジュアルベルをoff
 vbell off
