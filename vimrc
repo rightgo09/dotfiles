@@ -58,6 +58,9 @@ NeoBundle 'asux/vim-capybara'
 " Node
 NeoBundle 'digitaltoad/vim-jade.git'
 
+" Scala
+NeoBundle 'derekwyatt/vim-scala'
+
 " Send Gist
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
