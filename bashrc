@@ -26,7 +26,7 @@ source ~/.git-completion.bash
 alias prev='cd $OLDPWD'
 
 # display
-export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;36m\]\$ \[\033[00m\]'
+export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;31m\]X\[\033[1;32m\]/_/\[\033[1;31m\]X\[\033[00m\]< '
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
