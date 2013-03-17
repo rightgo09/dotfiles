@@ -10,3 +10,9 @@ hardstatus off
 
 # ビジュアルベルをoff
 vbell off
+
+# ウィンドウリサイズ
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^] command
+bind -c resize j eval 'resize +1' 'command -c resize'
+bind -c resize k eval 'resize -1' 'command -c resize'
