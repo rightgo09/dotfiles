@@ -120,3 +120,8 @@ map <silent> <F11> :bp!<CR>
 
 " 空行挿入
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+
+" タブを便利に
+nnoremap tt :<C-u>tabnew<Space>
+nnoremap <C-n> gt
+nnoremap <C-p> gT
