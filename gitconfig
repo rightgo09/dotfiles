@@ -15,7 +15,7 @@
   tre = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow bold)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   tree = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow bold)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   ls = ls-files
-  fe = fetch
+  fe = fetch --prune
   gr = grep
   chp = cherry-pick
   ad = add
