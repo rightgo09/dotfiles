@@ -19,3 +19,6 @@ bind -c resize k eval 'resize -1' 'command -c resize'
 
 # バッファサイズ
 scrollback 10000
+
+# 256色
+term xterm-256color
