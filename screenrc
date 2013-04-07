@@ -22,3 +22,7 @@ scrollback 10000
 
 # 256色
 term xterm-256color
+
+# encoding
+defencoding utf-8
+encoding utf-8 utf-8
