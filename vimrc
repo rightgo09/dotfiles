@@ -72,6 +72,8 @@ syntax on
 colorscheme default
 hi Comment ctermfg=9
 hi Comment ctermbg=4
+hi LineNr ctermfg=1
+hi LineNr ctermbg=235
 
 set number
 set cursorline
