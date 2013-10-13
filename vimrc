@@ -127,3 +127,5 @@ nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 nnoremap tt :<C-u>tabnew<Space>
 nnoremap <C-n> gt
 nnoremap <C-p> gT
+
+set backupdir=/tmp
