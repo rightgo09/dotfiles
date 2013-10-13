@@ -129,3 +129,4 @@ nnoremap <C-n> gt
 nnoremap <C-p> gT
 
 set backupdir=/tmp
+set mouse-=a
