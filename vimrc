@@ -49,7 +49,7 @@ NeoBundle 'hotchpotch/perldoc-vim'
 " Ruby
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'
-NeoBundle 'bbommarito/vim-slim'
+NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-cucumber'
