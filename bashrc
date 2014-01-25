@@ -1,35 +1,44 @@
-# default customize
-alias grep='grep --color=tty'
-alias tree='tree -C'
+# Perlbrew
+source $HOME/local/perl5/perlbrew/etc/bashrc
 
-# typo
-alias boybu=byobu
+# RVM
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+if [ -s "$HOME/etc/rvmrc" ]; then
+    source "$HOME/etc/rvmrc"
+fi # to have $rvm_path defined if set
+if [ -s "${rvm_path-$HOME/.rvm}/scripts/rvm" ]; then
+    source "${rvm_path-$HOME/.rvm}/scripts/rvm"
+fi
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# 1 char alias
-alias g=git
-alias v=vim
-alias l='ls -F'
+#---------------------------------------------
+# ENV
+export EDITOR=vim
 
-# 2 char alias
-alias gf='git flow'
-alias gg='git grep -n'
-
-# bundler
-alias bi='bundle install --path vendor/bundler'
-alias be='bundle exec'
-alias ber='bundle exec rspec'
-alias bec='bundle exec cucumber -v'
-
-# git util
-source ~/.git-completion.bash
-
-# util
-alias prev='cd $OLDPWD'
-
-# display
-export PS1='\[\033k\033\\\]\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;31m\]X\[\033[1;32m\]/_/\[\033[1;31m\]X\[\033[00m\]< '
+#---------------------------------------------
+# Prompt
+source $HOME/etc/git-prompt.sh
+source $HOME/etc/git-completion.bash
+export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;36m\]✘╹◡╹✘ \[\033[00m\]'
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
-# Ruby Version Manager
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#---------------------------------------------
+# Usuful
+alias g=git
+alias v=vim
+alias l='ls -F'
+alias prev='cd $OLDPWD'
+
+#---------------------------------------------
+# Git
+alias gg='git grep -n'
+
+#---------------------------------------------
+# Bundler
+alias bi='bundle install --path vendor/bundle'
+alias be='bundle exec'
+alias bc='bundle console'
+alias bc='bundle outdated'
+alias ber='bundle exec rspec'
+alias bec='bundle exec cucumber -v'
