@@ -20,6 +20,8 @@
   chp = cherry-pick
   ad = add
 
+[push]
+  default = simple
 [color]
   ui = auto
 [color "branch"]
