@@ -1,12 +1,11 @@
 # 初期メッセージoff
 startup_message off
 # 起動時にbashで開始
-shell -bash
+shell /bin/bash
 # キーバインドをCtrl+zに変更
 escape ^z^z
 # ステータスラインを常に表示
-hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y %m/%d %C%a "
-hardstatus off
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y-%m-%d %C%a "
 
 # ビジュアルベルをoff
 vbell off
@@ -18,10 +17,11 @@ bind -c resize j eval 'resize +1' 'command -c resize'
 bind -c resize k eval 'resize -1' 'command -c resize'
 
 # バッファサイズ
-scrollback 10000
+defscrollback 4000
 
 # 256色
 term xterm-256color
+#termcapinfo xterm-256color 'is=^[r^[mJ^[H^[?7h^[?1;4;6l'
 
 # encoding
 defencoding utf-8
