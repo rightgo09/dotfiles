@@ -1,6 +1,11 @@
 # Perlbrew
 source $HOME/local/perl5/perlbrew/etc/bashrc
 
+# Python
+export PYENV_ROOT=$HOME/local/pyenv
+export PATH="$PYENV_ROOT/shims:$PATH"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 # RVM
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 if [ -s "$HOME/etc/rvmrc" ]; then
