@@ -69,6 +69,7 @@ filetype plugin indent on     " required!
 filetype indent on
 
 syntax on
+set t_Co=256
 colorscheme default
 hi Comment ctermfg=9
 hi Comment ctermbg=4
