@@ -1,75 +1,44 @@
-" http://qiita.com/items/1c32d3f24cc2919203eb
-" http://qiita.com/items/ac3843ceccd0b685501f
-
-set nocompatible               " be iMproved
-filetype off
-
 if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
-endif
-" originalrepos on github
-NeoBundle 'Shougo/neobundle.vim'
-"NeoBundle 'Shougo/vimproc'
-"NeoBundle 'VimClojure'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-"NeoBundle 'Shougo/neocomplcache'
-"NeoBundle 'Shougo/neosnippet'
-"NeoBundle 'jpalardy/vim-slime'
-NeoBundle 'scrooloose/syntastic'
-""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
+  set nocompatible               " Be iMproved
 
-" ディレクトリ構造表示 http://alligatorswamp.hatenablog.com/entry/2012/09/09/163538
-" :NERDTree
+  " Required:
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+" 保存するとsyntax checkしてくれる
+NeoBundle 'scrooloose/syntastic'
+" ディレクトリ構造表示
 NeoBundle 'scrooloose/nerdtree'
 " %対応の拡張
 NeoBundle 'matchit.zip'
-" インデントに色づけ
-NeoBundle 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_color_change_percent = 30
-let g:indent_guides_guide_size = 1
-" 縦列整形
-NeoBundle 'Align'
-let g:Align_xstrlen = 3     " for japanese string
-let g:DrChipTopLvlMenu = '' " remove 'DrChip' menu
-" 対象テキストオブジェクトを囲む
-" s" でダブルクオートで囲める
-" cst\<div>で<div></div>で囲める
-NeoBundle 'tpope/vim-surround'
-
-" HTML5
-NeoBundle 'othree/html5.vim'
-
-" Perl
-NeoBundle 'petdance/vim-perl'
-NeoBundle 'hotchpotch/perldoc-vim'
-
-" Ruby
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'asux/vim-capybara'
-
-" Node
-NeoBundle 'digitaltoad/vim-jade.git'
-
-" Scala
-NeoBundle 'derekwyatt/vim-scala'
-
 " Send Gist
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
+" HTML5の新しいタグに色をつける
+NeoBundle 'othree/html5.vim'
+" Perl
+NeoBundle 'petdance/vim-perl'
+NeoBundle 'hotchpotch/perldoc-vim'
+" Ruby
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'kchmck/vim-coffee-script'
+" Scala
+NeoBundle 'derekwyatt/vim-scala'
 
-filetype plugin indent on     " required!
-filetype indent on
+" Required:
+filetype plugin indent on
+
 
 syntax on
-set t_Co=256
 colorscheme default
 hi Comment ctermfg=9
 hi Comment ctermbg=4
@@ -84,12 +53,10 @@ set shiftwidth=2
 set smartindent
 set cindent
 set directory=/tmp
+set backupdir=/tmp
+set mouse-=a
 set hlsearch
 nnoremap <ESC><ESC> :nohlsearch<CR>
-
-autocmd BufNewFile,BufRead *.psgi set filetype=perl
-autocmd BufNewFile,BufRead *.tt set filetype=html
-autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 
 " 行末のスペース、タブをハイライト表示
 augroup HighlightTrailingSpaces
@@ -112,15 +79,6 @@ map <silent> <F12> :bn!<CR>
 " F11で前のバッファに切り替え
 map <silent> <F11> :bp!<CR>
 
-
-" 保存時に行末の空白文字を消す
-"function! RTrim()
-"  let s:cursor = getpos(".")
-"  %s/\s\+$//e
-"  call setpos(".", s:cursor)
-"endfunction
-"autocmd BufWritePre * call RTrim()
-
 " 空行挿入
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 
@@ -128,9 +86,6 @@ nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 nnoremap tt :<C-u>tabnew<Space>
 nnoremap <C-n> gt
 nnoremap <C-p> gT
-
-set backupdir=/tmp
-set mouse-=a
 
 " タブ番号をつける
 " http://qiita.com/wadako111/items/755e753677dd72d8036d
