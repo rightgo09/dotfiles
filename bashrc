@@ -28,10 +28,10 @@ alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"
 
 #---------------------------------------------
 # Prompt
-if [ -e $HOME/etc/git-prompt.sh]; then
+if [ -e $HOME/etc/git-prompt.sh ]; then
   source $HOME/etc/git-prompt.sh
 fi
-if [ -e $HOME/etc/git-completion.bash]; then
+if [ -e $HOME/etc/git-completion.bash ]; then
   source $HOME/etc/git-completion.bash
 fi
 export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;36m\]✘˵╹◡╹˶✘ \[\033[00m\]'
