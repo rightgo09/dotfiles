@@ -22,12 +22,19 @@ fi
 #---------------------------------------------
 # ENV
 export EDITOR=vim
+alias v='env LANG=ja_JP.UTF-8 $HOME/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vi='env LANG=ja_JP.UTF-8 $HOME/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 $HOME/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 #---------------------------------------------
 # Prompt
-source $HOME/etc/git-prompt.sh
-source $HOME/etc/git-completion.bash
-export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;36m\]✘╹◡╹✘ \[\033[00m\]'
+if [ -e $HOME/etc/git-prompt.sh]; then
+  source $HOME/etc/git-prompt.sh
+fi
+if [ -e $HOME/etc/git-completion.bash]; then
+  source $HOME/etc/git-completion.bash
+fi
+export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;33m\]$(__git_ps1)\n\[\033[1;36m\]✘˵╹◡╹˶✘ \[\033[00m\]'
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
