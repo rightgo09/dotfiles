@@ -57,3 +57,8 @@ alias bc='bundle console'
 alias bo='bundle outdated'
 alias ber='bundle exec rspec'
 alias bec='bundle exec cucumber -v'
+
+
+#---------------------------------------------
+# Custom Script
+export PATH=$HOME/bin:$PATH
