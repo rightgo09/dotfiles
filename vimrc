@@ -55,6 +55,10 @@ NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
 
+" コメントON/OFFを手軽に実行
+" Ctrl + - を2回
+NeoBundle 'tomtom/tcomment_vim'
+
 " Required:
 filetype plugin indent on
 
