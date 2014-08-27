@@ -90,6 +90,12 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 " 最後に開いていた場所をカレント行にする
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 
+"#####検索設定#####
+set ignorecase " 大文字/小文字の区別なく検索する
+set smartcase " 検索文字列に大文字が含まれている場合は区別して検索する
+set wrapscan " 検索時に最後まで行ったら最初に戻る
+set incsearch " インクリメンタルサーチを行う
+
 " 行末のスペース、タブをハイライト表示
 augroup HighlightTrailingSpaces
   autocmd!
