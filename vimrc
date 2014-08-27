@@ -47,6 +47,9 @@ NeoBundle 'derekwyatt/vim-scala'
 " Git
 NeoBundle 'tpope/vim-fugitive'
 
+" Quick Run
+NeoBundle 'thinca/vim-quickrun'
+
 " Required:
 filetype plugin indent on
 
