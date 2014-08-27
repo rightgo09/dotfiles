@@ -44,6 +44,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 " Scala
 NeoBundle 'derekwyatt/vim-scala'
 
+" Git
+NeoBundle 'tpope/vim-fugitive'
+
 " Required:
 filetype plugin indent on
 
