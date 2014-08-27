@@ -44,6 +44,8 @@ alias l='ls -F'
 #---------------------------------------------
 # Git
 alias gg='git grep -n'
+alias gmo='git merge origin/master'
+alias grt='git rebase origin/master'
 
 #---------------------------------------------
 # Bundler
