@@ -40,7 +40,7 @@
   untracked = cyan reverse
   branch = magenta
 [core]
-  editor = vim
+  editor = /Applications/MacVim.app/Contents/MacOS/Vim
   pager = less
 [github]
   user = rightgo09
