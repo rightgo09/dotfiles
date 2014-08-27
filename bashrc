@@ -12,10 +12,10 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # RVM
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 if [ -s "$HOME/etc/rvmrc" ]; then
-    source "$HOME/etc/rvmrc"
+  source "$HOME/etc/rvmrc"
 fi # to have $rvm_path defined if set
 if [ -s "${rvm_path-$HOME/.rvm}/scripts/rvm" ]; then
-    source "${rvm_path-$HOME/.rvm}/scripts/rvm"
+  source "${rvm_path-$HOME/.rvm}/scripts/rvm"
 fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
