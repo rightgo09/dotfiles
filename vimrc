@@ -59,16 +59,21 @@ NeoBundle 'Shougo/neomru.vim'
 " Ctrl + - を2回
 NeoBundle 'tomtom/tcomment_vim'
 
+
+" before setting colorschema
+autocmd ColorScheme * highlight rubyDefine ctermfg=22
+autocmd ColorScheme * highlight rubyClass ctermfg=22
+autocmd ColorScheme * highlight rubyModule ctermfg=22
+
 " Required:
 filetype plugin indent on
 
 
 syntax on
 colorscheme default
-hi Comment ctermfg=9
-hi Comment ctermbg=4
-hi LineNr ctermfg=1
-hi LineNr ctermbg=235
+hi Comment ctermfg=blue
+hi Comment ctermbg=white
+hi CursorLineNr term=bold ctermfg=black ctermbg=yellow
 
 set number
 set cursorline
