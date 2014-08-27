@@ -68,7 +68,6 @@ autocmd ColorScheme * highlight rubyModule ctermfg=22
 " Required:
 filetype plugin indent on
 
-
 syntax on
 colorscheme default
 hi Comment ctermfg=blue
@@ -87,6 +86,9 @@ set backupdir=/tmp
 set mouse-=a
 set hlsearch
 nnoremap <ESC><ESC> :nohlsearch<CR>
+
+" 最後に開いていた場所をカレント行にする
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 
 " 行末のスペース、タブをハイライト表示
 augroup HighlightTrailingSpaces
