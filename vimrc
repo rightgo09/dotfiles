@@ -85,6 +85,8 @@ set directory=/tmp
 set backupdir=/tmp
 set mouse-=a
 set hlsearch
+"左右のカーソル移動で行間移動可能にする。
+set whichwrap=b,s,h,l,<,>,[,]
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " 最後に開いていた場所をカレント行にする
