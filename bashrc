@@ -39,9 +39,7 @@ export LSCOLORS=exGxcxdxCxegedabagacad
 #---------------------------------------------
 # Usuful
 alias g=git
-alias v=vim
 alias l='ls -F'
-alias prev='cd $OLDPWD'
 
 #---------------------------------------------
 # Git
