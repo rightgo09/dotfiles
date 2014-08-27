@@ -140,3 +140,22 @@ nmap    t [Tag]
 for n in range(1, 9)
   execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
 endfor
+
+
+let g:quickrun_config = {}
+let g:quickrun_config._ = {'*': {'split': ''}, 'runner' : 'vimproc'}
+let g:quickrun_config['rspec/bundle'] = {
+  \ 'type': 'rspec/bundle',
+  \ 'command': 'rspec',
+  \ 'exec': 'bundle exec %c %s'
+  \}
+let g:quickrun_config['rspec/normal'] = {
+  \ 'type': 'rspec/normal',
+  \ 'command': 'rspec',
+  \ 'exec': '%c %s'
+  \}
+function! RSpecQuickrun()
+  let b:quickrun_config = {'type' : 'rspec/bundle'}
+endfunction
+autocmd BufReadPost *_spec.rb call RSpecQuickrun()
+
