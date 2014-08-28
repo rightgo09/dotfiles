@@ -84,6 +84,7 @@ set smartindent
 set cindent
 set directory=/tmp
 set backupdir=/tmp
+set undodir=/tmp
 set mouse-=a
 set hlsearch
 "左右のカーソル移動で行間移動可能にする。
