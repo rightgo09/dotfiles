@@ -22,6 +22,11 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
+" 縦列整形
+NeoBundle 'Align'
+let g:Align_xstrlen = 3     " for japanese string
+let g:DrChipTopLvlMenu = '' " remove 'DrChip' menu
+
 " My Bundles here:
 " 保存するとsyntax checkしてくれる
 NeoBundle 'scrooloose/syntastic'
