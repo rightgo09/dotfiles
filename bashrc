@@ -25,6 +25,10 @@ if [ -s "${rvm_path-$HOME/.rvm}/scripts/rvm" ]; then
 fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# Nodebrew
+export NODEBREW_ROOT=$HOME/local/nodebrew
+export PATH=$NODEBREW_ROOT/current/bin:$PATH
+
 #---------------------------------------------
 # ENV
 export EDITOR=vim
