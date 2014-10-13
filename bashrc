@@ -62,7 +62,14 @@ alias bo='bundle outdated'
 alias ber='bundle exec rspec'
 alias bec='bundle exec cucumber -v'
 
+#---------------------------------------------
+# peco alias
+if [ -x /usr/local/bin/peco ]; then
+  alias pco='git checkout `git branch | peco`'
+  alias sshp='ssh $(grep "^Host" ~/.ssh/config|peco|awk "{print \$2}")'
+fi
 
 #---------------------------------------------
 # Custom Script
 export PATH=$HOME/bin:$PATH
+
