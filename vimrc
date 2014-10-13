@@ -218,3 +218,6 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 " grep検索の実行後にQuickFix Listを表示する
 autocmd QuickFixCmdPost *grep* cwindow
+
+" Python
+autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
