@@ -1,3 +1,9 @@
+if [ -x "`which go`" ]; then
+  export GOROOT=`go env GOROOT`
+  export GOPATH=$HOME/local/go
+  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
