@@ -102,6 +102,9 @@ NeoBundle 'slim-template/vim-slim'
 " PHP
 "-------------------------------------------------------------------------------
 NeoBundle 'everzet/phpfolding.vim'
+autocmd FileType php setl expandtab tabstop=4 shiftwidth=4 omnifunc=phpcomplete#CompletePHP
+" let g:syntastic_php_checkers = ['php', 'phpcs']
+let g:syntastic_php_checkers = ['php']
 
 "-------------------------------------------------------------------------------
 " Scala
