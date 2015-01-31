@@ -64,6 +64,7 @@ function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 # Git
 alias gg='git grep -n'
 alias gmo='git merge origin/master'
+alias gdo='git merge origin/develop'
 alias grt='git rebase origin/master'
 
 #---------------------------------------------
@@ -85,4 +86,3 @@ fi
 #---------------------------------------------
 # Custom Script
 export PATH=$HOME/bin:$PATH
-
