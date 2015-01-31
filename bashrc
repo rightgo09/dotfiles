@@ -35,9 +35,12 @@ export COMPOSER_HOME=$HOME/local/php5/composer
 export PATH=$HOME/local/php5/composer/vendor/bin:$PATH
 
 #---------------------------------------------
-# ENV
+# Vim
 export EDITOR=vim
 alias v='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
 
 #---------------------------------------------
 # Prompt
