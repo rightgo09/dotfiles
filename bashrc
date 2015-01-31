@@ -58,6 +58,7 @@ export LSCOLORS=exGxcxdxCxegedabagacad
 # Usuful
 alias g=git
 alias l='ls -F'
+function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 #---------------------------------------------
 # Git
