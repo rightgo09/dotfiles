@@ -29,6 +29,11 @@ fi
 export NODEBREW_ROOT=$HOME/local/nodebrew
 export PATH=$NODEBREW_ROOT/current/bin:$PATH
 
+# PHP
+export PATH=/usr/local/php5/bin:$PATH
+export COMPOSER_HOME=$HOME/local/php5/composer
+export PATH=$HOME/local/php5/composer/vendor/bin:$PATH
+
 #---------------------------------------------
 # ENV
 export EDITOR=vim
