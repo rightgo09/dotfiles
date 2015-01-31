@@ -162,6 +162,27 @@ augroup StartFromLastLine
   autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 augroup END
 
+" http://itchyny.hatenablog.com/entry/2014/12/25/090000
+" マッピングYを、行末までのヤンクにする設定
+nnoremap Y y$
+" 一行の文字数が多くてもきちんと描画されるようになる
+set display=lastline
+" 補完メニューの高さ
+set pumheight=10
+" 括弧を入力した時に、対応する括弧に一瞬カーソル飛ぶようになる
+set showmatch
+" カーソルが飛ぶ時間を0.1秒の何倍かで設定
+set matchtime=1
+" 数字インクリメント
+nnoremap + <C-a>
+" 数字デクリメント
+nnoremap - <C-x>
+" スワップファイルがあるときにReadOnlyで開く
+augroup swapchoice-readonly
+  autocmd!
+  autocmd SwapExists * let v:swapchoice = 'o'
+augroup END
+
 "===============================================================================
 " 検索
 "===============================================================================
