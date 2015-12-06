@@ -8,12 +8,14 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Perlbrew
-source $HOME/local/perl5/perlbrew/etc/bashrc
+if [ -s $HOME/local/perl5/perlbrew/etc/bashrc ]; then
+  source $HOME/local/perl5/perlbrew/etc/bashrc
+fi
 
 # Python
 export PYENV_ROOT=$HOME/local/pyenv
-export PATH="$PYENV_ROOT/shims:$PATH"
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PATH="$PYENV_ROOT/bin:$PATH"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; eval "$(pyenv virtualenv-init -)"; fi
 
 # RVM
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -44,13 +46,13 @@ alias ctags='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
 
 #---------------------------------------------
 # Prompt
-if [ -e $HOME/etc/git-prompt.sh ]; then
-  source $HOME/etc/git-prompt.sh
+if [ -e /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
-if [ -e $HOME/etc/git-completion.bash ]; then
-  source $HOME/etc/git-completion.bash
+if [ -e /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  source /usr/local/etc/bash_completion.d/git-completion.bash
 fi
-export PS1='\[\033[1;36m\]\h[\u: \w]\[\033[1;31m\]$(__git_ps1)\n\[\033[1;36m\]✘˵╹◡╹˶✘ \[\033[00m\]'
+export PS1='\[\033[1;36m\][\u: \w]\[\033[1;31m\]$(__git_ps1)\n\[\033[1;36m\]$ \[\033[00m\]'
 export CLICOLOR=1
 export LSCOLORS=exGxcxdxCxegedabagacad
 
@@ -86,3 +88,5 @@ fi
 #---------------------------------------------
 # Custom Script
 export PATH=$HOME/bin:$PATH
+
+export PATH="$PATH:$HOME/local/rvm/bin" # Add RVM to PATH for scripting
