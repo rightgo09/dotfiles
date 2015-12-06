@@ -1,0 +1,20 @@
+set directory=/tmp
+
+set backupdir=/tmp
+
+set undodir=/tmp
+
+set mouse-=a
+
+set whichwrap=b,s,h,l,<,>,[,] "左右のカーソル移動で行間移動可能にする。
+
+set ambiwidth=double " 全角記号を全角で表示する
+
+set imdisable " コマンドモードでIMEを無効にする
+
+set display=lastline " 一行の文字数が多くてもきちんと描画されるようになる
+
+set pumheight=10 " 補完メニューの高さ
+
+set matchtime=1 " カーソルが飛ぶ時間を0.1秒の何倍かで設定
+

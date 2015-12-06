@@ -1,0 +1,41 @@
+
+" AutoComplPopを無効化する設定です。AutoComplPopとneocomplcacheは競合するためです。AutoComplPopがインストールされていない場合は必要ありません。
+let g:acp_enableAtStartup = 0
+
+" neocomplcacheを起動時に有効化する設定です。AutoComplPopと違ってneocomplcacheは自動起動しないので、普段使用するにはこの設定が必要です。 そうでないと、毎回:NeoComplCacheEnableを実行しなければいけません。
+let g:neocomplcache_enable_at_startup = 1
+
+" neocomplcacheのsmart case機能を有効化します。 smart caseは'smartcase'と同様に、大文字が入力されるまで大文字小文字の区別を無視するという機能です。
+let g:neocomplcache_enable_smart_case = 1
+
+" シンタックスをキャッシュするときの最小文字長を3にしています。デフォルトでは4です。 アセンブリ言語のレジスタ名など、短いキーワードもキャッシュしてくれるようになるのでオススメです。
+let g:neocomplcache_min_syntax_length = 3
+
+" neocomplcacheを自動的にロックするバッファ名のパターンを指定します。 ku.vimやfuzzyfinderなど、neocomplcacheと相性が悪いプラグインを使用する場合に設定します。
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+
+
+" Enable heavy features.
+" Use camel case completion.
+"let g:neocomplcache_enable_camel_case_completion = 1
+" Use underbar completion.
+"let g:neocomplcache_enable_underbar_completion = 1
+
+" ファイルタイプ毎にneocomplcacheのディクショナリを設定することができます。 neocomplcacheは'dictionary'も見ますが、こちらを優先します。
+" g:neocomplcache_dictionary_filetype_listsはcontext filetypeでも参照できるので、できればこちらを設定するべきです。
+let g:neocomplcache_dictionary_filetype_lists = {
+    \ 'default' : '',
+    \ }
+
+
+" Define keyword.
+if !exists('g:neocomplcache_keyword_patterns')
+    let g:neocomplcache_keyword_patterns = {}
+endif
+" キーワードパターンの設定です。 neocomplcacheが対応していない独自の言語を使いたい場合は、これを変更しないといけません。
+let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+
+" Tabキーで候補選択
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

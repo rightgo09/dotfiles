@@ -1,0 +1,49 @@
+"------------------------------------
+" Syntastic
+"------------------------------------
+"let g:syntastic_php_checkers = ['php', 'phpcs']
+let g:syntastic_php_checkers = ['php']
+
+
+"------------------------------------
+" Align
+"------------------------------------
+let g:Align_xstrlen = 3     " for japanese string
+let g:DrChipTopLvlMenu = '' " remove 'DrChip' menu
+
+
+" map <Leader>n <plug>NERDTreeTabsToggle<CR>
+" let g:nerdtree_tabs_open_on_console_startup=1
+
+"------------------------------------
+" Auto Ctags
+"------------------------------------
+" ファイル保存時に自動でtagsを生成
+let g:auto_ctags = 1
+" tagsの作成ディレクトリ
+let g:auto_ctags_directory_list = ['.git']
+" ジャンプするときに新しいタブを開く
+noremap <C-]> <C-w><C-]><C-w>T
+" 同じ関数名などの候補を表示
+nnoremap <C-_> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
+
+"------------------------------------
+" Quick Run
+"------------------------------------
+let g:quickrun_config = {}
+let g:quickrun_config._ = {'*': {'split': ''}, 'runner' : 'vimproc'}
+let g:quickrun_config['rspec/bundle'] = {
+  \ 'type': 'rspec/bundle',
+  \ 'command': 'rspec',
+  \ 'exec': 'bundle exec %c %s'
+  \}
+let g:quickrun_config['rspec/normal'] = {
+  \ 'type': 'rspec/normal',
+  \ 'command': 'rspec',
+  \ 'exec': '%c %s'
+  \}
+function! RSpecQuickrun()
+  let b:quickrun_config = {'type' : 'rspec/bundle'}
+endfunction
+autocmd BufReadPost *_spec.rb call RSpecQuickrun()
+
