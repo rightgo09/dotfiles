@@ -27,11 +27,11 @@ highlight CursorLine ctermbg=black guibg=black
 
 
 " インサートモードに入った時にカーソル行(列)の色を変更する
-augroup vimrc_change_cursorline_color
-  autocmd!
-  autocmd InsertEnter * highlight CursorLine term=underline cterm=underline ctermbg=240 gui=underline guibg=#666666 | highlight CursorColumn ctermfg=231 ctermbg=31 gui=bold guifg=#ffffff guibg=#0087af
-  autocmd InsertLeave * highlight CursorLine term=underline cterm=underline ctermbg=235 gui=underline guibg=#333333 | highlight CursorColumn term=reverse ctermbg=235 guibg=#333333
-augroup END
+"augroup vimrc_change_cursorline_color
+  "autocmd!
+  "autocmd InsertEnter * highlight CursorLine term=underline cterm=underline ctermbg=240 gui=underline guibg=#666666 | highlight CursorColumn ctermfg=231 ctermbg=31 gui=bold guifg=#ffffff guibg=#0087af
+  "autocmd InsertLeave * highlight CursorLine term=underline cterm=underline ctermbg=235 gui=underline guibg=#333333 | highlight CursorColumn term=reverse ctermbg=235 guibg=#333333
+"augroup END
 
 " コマンド実行中は再描画しない
 set lazyredraw
