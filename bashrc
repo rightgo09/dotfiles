@@ -64,6 +64,9 @@ function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
 #---------------------------------------------
 # Git
+if [ -e /usr/local/share/git-core/contrib/diff-highlight ]; then
+  export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+fi
 alias gg='git grep -n'
 alias gmo='git merge origin/master'
 alias gdo='git merge origin/develop'
