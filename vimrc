@@ -23,3 +23,4 @@ source ~/.vimrc.util
 
 source ~/.vimrc.plugins_setting
 
+source ~/.vimrc.go
