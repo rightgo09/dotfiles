@@ -1,0 +1,8 @@
+au BufNewFile,BufRead *.go set sw=4 noexpandtab ts=4
+
+" syntastic plugin
+let g:syntastic_go_checkers = ['go', 'golint']
+
+" github.com/nsf/gocode
+" completion
+set completeopt=menu
