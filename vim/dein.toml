@@ -1,3 +1,6 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
 # status line
 [[plugins]]
 repo = 'bling/vim-airline'
