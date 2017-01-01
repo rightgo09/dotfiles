@@ -1,6 +1,6 @@
 if [ -x "`which go`" ]; then
   export GOROOT=`go env GOROOT`
-  export GOPATH=$HOME/local/go
+  export GOPATH=$HOME/dev
   export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 fi
 
@@ -93,3 +93,5 @@ fi
 export PATH=$HOME/bin:$PATH
 
 export PATH="$PATH:$HOME/local/rvm/bin" # Add RVM to PATH for scripting
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
