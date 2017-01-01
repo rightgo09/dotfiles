@@ -1,0 +1,8 @@
+" ファイル保存時に自動でtagsを生成
+let g:auto_ctags = 1
+" tagsの作成ディレクトリ
+let g:auto_ctags_directory_list = ['.git']
+" ジャンプするときに新しいタブを開く
+noremap <C-]> <C-w><C-]><C-w>T
+" 同じ関数名などの候補を表示
+nnoremap <C-_> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
