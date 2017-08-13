@@ -1,7 +1,11 @@
 au BufNewFile,BufRead *.go set sw=4 noexpandtab ts=4
+" 保存時にgofmtする
+au FileType go au BufWritePre <buffer> Fmt
 
 " syntastic plugin
 let g:syntastic_go_checkers = ['go', 'golint']
+
+execute "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 
 " github.com/nsf/gocode
 " completion
