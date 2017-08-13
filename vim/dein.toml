@@ -5,6 +5,10 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'bling/vim-airline'
 
+# colorscheme
+[[plugins]]
+repo = 'chriskempson/vim-tomorrow-theme'
+
 # syntax check
 [[plugins]]
 repo = 'scrooloose/syntastic'

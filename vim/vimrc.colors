@@ -1,4 +1,4 @@
-colorscheme morning
+colorscheme Tomorrow
 
 " 行末のスペース、タブをハイライト表示
 augroup HighlightTrailingSpaces
