@@ -71,6 +71,7 @@ alias gg='git grep -n'
 alias gmo='git merge origin/master'
 alias gdo='git merge origin/develop'
 alias grt='git rebase origin/master'
+alias gp='git push origin $(git current-branch)'
 
 #---------------------------------------------
 # Bundler

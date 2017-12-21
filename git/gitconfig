@@ -19,6 +19,7 @@
   gr = grep
   chp = cherry-pick
   ad = add
+  current-branch = rev-parse --abbrev-ref HEAD
 
 [push]
   default = simple
