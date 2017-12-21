@@ -88,6 +88,7 @@ alias bec='bundle exec cucumber -v'
 if [ -x /usr/local/bin/peco ]; then
   alias gco='git checkout `git branch | peco`'
   alias sshp='ssh $(grep "^Host" ~/.ssh/config|peco|awk "{print \$2}")'
+  alias cdp='cd $HOME/dev/src/$(ghq list | peco)'
 fi
 
 #---------------------------------------------
